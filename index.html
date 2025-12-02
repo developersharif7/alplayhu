@@ -1,6 +1,8 @@
 
 <head>
-    <meta name="google-site-verification" content="xCJbjjBM7DpMNt7VU2I_xBgccK74XNIepvHXGAh2L48" />
+    <!-- ✅ AD 2: In-Page Ad - Mobile Optimized, Async Loading for Fast Performance -->
+    <script async>(function(s){s.dataset.zone='10266128',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+    <meta name="google-site-verification" content="xCJbjjBM7DpMNt7VU2I_xBgccK74XNIepvHXGAh2L48" >
     <meta charset="UTF-8">
     <!-- ✨ Enhanced Android App Support - Native Feel with Status Bar -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
@@ -300,33 +302,6 @@
             color: var(--search-placeholder) !important;
             font-size: 12px;
             font-weight: 400;
-        }
-
-        /* Theme Selector Button */
-        .theme-selector {
-            background: transparent;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 6px;
-            border-radius: 50%;
-            transition: all 0.15s ease;
-            color: var(--primary-color);
-            width: 34px;
-            height: 34px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 2px;
-        }
-
-        .theme-selector:active {
-            transform: scale(0.95);
-            background: var(--ripple-color);
-        }
-
-        .theme-selector.rotating {
-            animation: rotate 0.3s ease-in-out;
         }
 
         /* Android Three-Dot Menu - Colorful */
@@ -1320,10 +1295,6 @@
             background: linear-gradient(135deg, var(--teal-color), var(--success-color));
         }
 
-        .action-icon.crypto {
-            background: linear-gradient(135deg, #FF9800, #E91E63);
-        }
-
         .action-icon.explore {
             background: linear-gradient(135deg, var(--indigo-color), var(--primary-color));
         }
@@ -1498,7 +1469,6 @@
 
         /* Additional project card styles */
         .project-card {
-
             transition: all 0.3s ease;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -1904,8 +1874,45 @@
         #send:hover {
             background: var(--secondary-color);
         }
+
+        /* ✅ MOBILE-OPTIMIZED AD CONTAINERS FOR ANDROID */
+        .mobile-ad-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 12px auto;
+            padding: 0;
+            overflow: hidden;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Prevent ad overlap with content */
+        .mobile-ad-container + * {
+            clear: both;
+        }
+
+        /* Mobile responsive ad sizing */
+        @media (max-width: 768px) {
+            .mobile-ad-container {
+                max-width: 100vw;
+                padding: 8px 0;
+            }
+        }
+
+        /* Ensure ads load smoothly without layout shift */
+        .mobile-ad-container > * {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
+<!-- ✅ AD 1: Header Ad - Mobile Optimized, Fast Loading -->
+<script src="https://quge5.com/88/tag.min.js" data-zone="189761" async data-cfasync="false"></script>
 <body>
     <div class="app-container">
         <!-- Ultra-Compact Header with Theme Selector and Android Three-Dot Menu -->
@@ -1917,9 +1924,6 @@
                 <i class="fas fa-search"></i>
                 <input type="text" class="search-input" placeholder="Search games & apps...">
             </div>
-            <button id="theme-selector-btn" class="theme-selector">
-                <i class="fas fa-palette"></i>
-            </button>
             <button id="menu-dots-btn" class="menu-dots">
                 <i class="fas fa-ellipsis-v"></i>
             </button>
@@ -1929,15 +1933,17 @@
                     <i class="fas fa-sync-alt"></i>
                     <span>Refresh</span>
                 </a>
-                
-                
-                
+                <a class="dropdown-item" onclick="setTheme('light')">
+                    <i class="fas fa-sun"></i>
+                    <span>White Theme</span>
+                </a>
+                <a class="dropdown-item" onclick="setTheme('dark')">
+                    <i class="fas fa-moon"></i>
+                    <span>Black Theme</span>
                 </a>
                 <a class="dropdown-item" onclick="showAbout()">
                     <i class="fas fa-info-circle"></i>
                     <span>About</span>
-                </a>
-                
                 </a>
             </div>
         </div>
@@ -1958,21 +1964,9 @@
                     <i class="fas fa-shield-alt"></i>
                     <span>Privacy Policy</span>
                 </a>
-                <a class="side-menu-item" onclick="openExternalPage('terms'); closeSideMenu();">
-                    <i class="fas fa-file-contract"></i>
-                    <span>Terms of Service</span>
-                </a>
                 <a class="side-menu-item" onclick="openExternalPage('about'); closeSideMenu();">
                     <i class="fas fa-info-circle"></i>
                     <span>About Us</span>
-                </a>
-                <a class="side-menu-item" onclick="openExternalPage('contact'); closeSideMenu();">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
-                <a class="side-menu-item" onclick="openExternalPage('feedback'); closeSideMenu();">
-                    <i class="fas fa-comment"></i>
-                    <span>Feedback</span>
                 </a>
                 
                 </a>
@@ -2062,17 +2056,9 @@
                             <span class="text-sm mr-2">🔄</span>
                             <span class="text-xs font-medium">Refresh Projects</span>
                         </a>
-                        <a href="#" onclick="redirectToAlPlayHub(); toggleDeveloperMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
-                            <span class="text-sm mr-2">🌐</span>
-                            <span class="text-xs font-medium">Visit Website</span>
-                        </a>
-                        <a href="https://www.crekode.com/developersharif" target="_blank" onclick="toggleDeveloperMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
+                        <a href="https://www.crekode.com/developersharif" target="_blank" onclick="toggleDeveloperMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 transition-all duration-200">
                             <span class="text-sm mr-2">💼</span>
                             <span class="text-xs font-medium">Portfolio</span>
-                        </a>
-                        <a href="mailto:ms2600971@gmail.com" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 transition-all duration-200">
-                            <span class="text-sm mr-2">📧</span>
-                            <span class="text-xs font-medium">Contact</span>
                         </a>
                     </div>
                 </div>
@@ -2113,7 +2099,7 @@
                                 <a href="https://x.com/dcmotorlab?t=iajS-fAz4Iax7LEbPOLq-g&s=09" style="background: linear-gradient(135deg, #1DA1F2, #0D8BD9);" class="w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-80 transition-colors">
                                     <i class="fab fa-twitter text-sm"></i>
                                 </a>
-                                <a href="mailto:ms2600971@gmail.com" style="background: linear-gradient(135deg, #EA4335, #D33B2C);" class="w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-80 transition-colors">
+                                <a href="/cdn-cgi/l/email-protection#38554b0a0e0808010f09785f55595154165b5755" style="background: linear-gradient(135deg, #EA4335, #D33B2C);" class="w-10 h-10 rounded-full flex items-center justify-center text-white hover:opacity-80 transition-colors">
                                     <i class="fas fa-envelope text-sm"></i>
                                 </a>
                             </div>
@@ -2201,21 +2187,9 @@
                 <!-- APK Page Dropdown Menu -->
                 <div id="apkMenu" class="hidden absolute top-12 right-2 bg-white rounded-lg shadow-lg border border-gray-200 z-50 min-w-44">
                     <div class="py-2">
-                        <a href="#" onclick="loadAPKGames(); toggleAPKMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
+                        <a href="#" onclick="loadAPKGames(); toggleAPKMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 transition-all duration-200">
                             <span class="text-sm mr-2">🔄</span>
                             <span class="text-xs font-medium">Refresh Games</span>
-                        </a>
-                        <a href="#" onclick="redirectToAlPlayHub(); toggleAPKMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
-                            <span class="text-sm mr-2">🌐</span>
-                            <span class="text-xs font-medium">Visit Website</span>
-                        </a>
-                        <a href="#" onclick="openCryptoPage(); toggleAPKMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
-                            <span class="text-sm mr-2">🚀</span>
-                            <span class="text-xs font-medium">Free Crypto Airdrops</span>
-                        </a>
-                        <a href="mailto:ms2600971@gmail.com" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 transition-all duration-200">
-                            <span class="text-sm mr-2">📧</span>
-                            <span class="text-xs font-medium">Support</span>
                         </a>
                     </div>
                 </div>
@@ -2322,21 +2296,9 @@
                             <span class="text-sm mr-2">📤</span>
                             <span class="text-xs font-medium">Upload Content</span>
                         </a>
-                        <a href="#" onclick="redirectToAlPlayHub(); toggleOnlineMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
-                            <span class="text-sm mr-2">🌐</span>
-                            <span class="text-xs font-medium">Visit Website</span>
-                        </a>
-                        <a href="#" onclick="showUploadPolicy(); toggleOnlineMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
+                        <a href="#" onclick="showUploadPolicy(); toggleOnlineMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 transition-all duration-200">
                             <span class="text-sm mr-2">📋</span>
                             <span class="text-xs font-medium">Upload Guidelines</span>
-                        </a>
-                        <a href="mailto:ms2600971@gmail.com" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 border-b border-gray-100 transition-all duration-200">
-                            <span class="text-sm mr-2">📧</span>
-                            <span class="text-xs font-medium">Support Email</span>
-                        </a>
-                        <a href="#" onclick="showTermsPolicy(); toggleOnlineMenu();" class="flex items-center px-3 py-2 text-gray-700 hover:bg-blue-50 transition-all duration-200">
-                            <span class="text-sm mr-2">⚖️</span>
-                            <span class="text-xs font-medium">Terms & Policies</span>
                         </a>
                     </div>
                 </div>
@@ -2374,32 +2336,8 @@
                         </div>
                     </div>
 
-                    <!-- Action Icons Section with YouTube Theme -->
+                    <!-- Action Icons Section -->
                     <div class="flex justify-center items-center gap-3 mb-3">
-                        <!-- YouTube Multi Tool Kit Icon -->
-                        <div class="text-center w-14">
-                            <button onclick="openYouTubeTools()" class="action-icon youtube-tools mx-auto w-9 h-9" title="YouTube Multi Tool Kit">
-                                <i class="fab fa-youtube text-sm"></i>
-                            </button>
-                            <p class="text-xs mt-1 text-gray-600 font-normal leading-tight">ToolKit</p>
-                        </div>
-                        
-                         <!-- Content Creator Tools Icon -->
-                        <div class="text-center w-14">
-                            <button onclick="openCryptoPage()" class="action-icon creator-tools mx-auto w-9 h-9" title="Content Creator Tools">
-                                <i class="fas fa-coins text-sm"></i>
-                            </button>
-                            <p class="text-xs mt-1 text-gray-600 font-normal leading-tight">crypto</p>
-                        </div>
-                     
-                        <!-- Content Creator Tools Icon -->
-                        <div class="text-center w-14">
-                            <button onclick="openCreatorTools()" class="action-icon creator-tools mx-auto w-9 h-9" title="Content Creator Tools">
-                                <i class="fas fa-video text-sm"></i>
-                            </button>
-                            <p class="text-xs mt-1 text-gray-600 font-normal leading-tight">AllTool</p>
-                        </div>
-                        
                         <!-- Center Upload Cloud Icon -->
                         <div class="text-center w-14">
                             <button onclick="showUploadModal()" class="upload-icon mx-auto w-9 h-9" title="Upload Content">
@@ -2407,7 +2345,7 @@
                             </button>
                             <p class="text-xs mt-1 text-gray-600 font-normal leading-tight">Upload</p>
                         </div>
-                        
+
                         <!-- My Uploads Icon -->
                         <div class="text-center w-14">
                             <button onclick="showMyUploadsModal()" class="action-icon store mx-auto w-9 h-9" title="My Uploads">
@@ -2701,7 +2639,7 @@
         </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
@@ -2769,49 +2707,38 @@
         let isChatOpen = false;
         let hasShownWelcome = false;
 
-        // ✅ ENHANCED THEME MANAGEMENT WITH BLACK THEME
-        const themes = [
-            { name: 'light', label: 'Classic', icon: '☀️', color: '#FFFFFF' },
-            { name: 'ocean', label: 'Ocean', icon: '🌊', color: '#E3F2FD' },
-            { name: 'sunset', label: 'Sunset', icon: '🌅', color: '#FFF3E0' },
-            { name: 'nature', label: 'Nature', icon: '🌿', color: '#F1F8E9' },
-            { name: 'royal', label: 'Royal', icon: '👑', color: '#F3E5F5' },
-            { name: 'dark', label: 'Dark', icon: '🌙', color: '#000000' }
-        ];
-
-        let currentThemeIndex = 0;
+        // ✅ SIMPLIFIED THEME MANAGEMENT - ONLY WHITE AND BLACK THEMES
+        const themes = {
+            'light': { name: 'light', label: 'White Theme', icon: '☀️', color: '#FFFFFF' },
+            'dark': { name: 'dark', label: 'Black Theme', icon: '🌙', color: '#000000' }
+        };
 
         function initializeTheme() {
             const savedTheme = localStorage.getItem('alplayhub-theme') || 'light';
-            const themeIndex = themes.findIndex(t => t.name === savedTheme);
-            currentThemeIndex = themeIndex !== -1 ? themeIndex : 0;
-            currentTheme = themes[currentThemeIndex].name;
+            const theme = themes[savedTheme] ? savedTheme : 'light';
+            currentTheme = theme;
             applyTheme(currentTheme);
         }
 
-        function cycleTheme() {
-            const themeSelectorBtn = document.getElementById('theme-selector-btn');
-            themeSelectorBtn.classList.add('rotating');
-            
-            setTimeout(() => {
-                themeSelectorBtn.classList.remove('rotating');
-            }, 300);
+        function setTheme(themeName) {
+            if (!themes[themeName]) {
+                console.error('Invalid theme:', themeName);
+                return;
+            }
 
-            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-            currentTheme = themes[currentThemeIndex].name;
-            
+            currentTheme = themeName;
             applyTheme(currentTheme);
             localStorage.setItem('alplayhub-theme', currentTheme);
-            
-            const themeInfo = themes[currentThemeIndex];
-            showToast(`${themeInfo.icon} ${themeInfo.label} Theme Active!`, 2000);
-            
+
+            const themeInfo = themes[themeName];
+            showToast(`${themeInfo.icon} ${themeInfo.label} Active!`, 2000);
+
             document.getElementById('dropdown-menu').classList.remove('active');
         }
 
         function applyTheme(theme) {
             document.documentElement.setAttribute('data-theme', theme);
-            const themeData = themes.find(t => t.name === theme);
+            const themeData = themes[theme];
             if (themeData) {
                 updateThemeColorImmediate(themeData.color);
             }
@@ -3161,7 +3088,6 @@
 </head>
 <body>
     <iframe src="${gameUrl}" allowfullscreen allow="autoplay; fullscreen; gamepad; microphone; camera"></iframe>
-</body>
 </html>`;
                 }
             } else {
@@ -3513,9 +3439,6 @@
             setupAPKCarousel();
             setupOnlineCarousel();
             updateChatVisibility();
-            
-            // Setup theme selector
-            document.getElementById('theme-selector-btn').addEventListener('click', cycleTheme);
         });
 
         // ✅ SETUP SEPARATE CAROUSEL FOR APK PAGE WITH UNIQUE IMAGES
@@ -3991,6 +3914,7 @@
                             </ul>
                         </div>
                     </div>
+                    
                     
                     <div class="policy-section">
                         <h4 class="font-semibold text-gray-800 mb-2">Content Ownership</h4>
@@ -4908,7 +4832,6 @@
         });
     </script>
 </body>
-<meta name="monetag" content="e564bc20b585623007e42ebcd28989d0">
+<!-- ✅ AD 3: Vignette Ad - Mobile Optimized, Async for Fast Loading, Shows During Gameplay -->
+<script async>(function(s){s.dataset.zone='10266135',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 </html>
-
-
