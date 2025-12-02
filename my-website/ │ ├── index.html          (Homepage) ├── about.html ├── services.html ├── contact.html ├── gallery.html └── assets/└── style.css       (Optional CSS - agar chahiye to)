@@ -1,0 +1,9 @@
+my-website/
+│
+├── index.html          (Homepage)
+├── about.html
+├── services.html
+├── contact.html
+├── gallery.html
+└── assets/
+    └── style.css       (Optional CSS - agar chahiye to)
